@@ -37,9 +37,10 @@ public class Main {
              int var1 = in.readInt();
              double var2 = in.readDouble();
              float var3 = in.readFloat();
-            System.out.println("input value : "+var1);
-            System.out.println("input value : "+var2);
-            System.out.println("input value : "+var3);
+
+            System.out.println("integer value : "+var1);
+            System.out.println("double value : "+var2);
+            System.out.println("float value : "+var3);
 
             in.close();
         }catch(Exception e){
