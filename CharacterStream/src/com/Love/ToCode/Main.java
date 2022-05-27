@@ -1,6 +1,7 @@
 package com.Love.ToCode;
 
 import java.io.*;
+import java.sql.SQLOutput;
 
 public class Main {
 
@@ -34,10 +35,18 @@ public class Main {
 
          OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream(file.getName()));
          InputStreamReader in = new InputStreamReader(new FileInputStream(file.getName()));
+         // reading from from output stream
+//         System.out.println(out.getEncoding());
 
          out.write("welcome to java networking");
          out.flush();
+         //reading from an input stream
+         int data  = in.read();
 
+         while (data != -1){
+             System.out.print((char) data);
+             data = in.read();
+         }
 
 
 
