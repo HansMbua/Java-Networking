@@ -12,7 +12,7 @@ public class Main {
         }else{
             try{
                 if (file.createNewFile()){
-                    System.out.println("file created ");
+                    System.out.println("file created ! ");
                 }else
                 {
                     System.out.println("file not created ");
